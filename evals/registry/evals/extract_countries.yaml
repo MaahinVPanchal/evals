@@ -1,0 +1,9 @@
+extract_countries:
+  id: extract_countries.dev.match-v1
+  metrics: [accuracy]
+  description: Evaluate if all the countries were extracted from the passage
+
+extract_countries.dev.match-v1:
+  class: evals.elsuite.extract_countries:ExtractCountries
+  args:
+    test_jsonl: D:/Maahin Coding/ML_Project/openai-eval-project/evals/evals/registry/data/datasets/inputs.jsonl
