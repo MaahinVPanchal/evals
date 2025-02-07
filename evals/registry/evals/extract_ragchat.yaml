@@ -1,0 +1,9 @@
+extract_ragchat:
+  id: extract_ragchat.dev.match-v1
+  metrics: [accuracy]
+  description: Evaluate if all query and provide response
+
+extract_ragchat.dev.match-v1:
+  class: evals.elsuite.extract_ragchat:Extractrag
+  args:
+    test_jsonl: "D:\\Maahin Coding\\ML_Project\\openai-eval-project\\evals\\evals\\registry\\data\\datasets_rag\\inputs.jsonl"
